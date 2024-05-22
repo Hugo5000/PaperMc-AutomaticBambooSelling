@@ -1,0 +1,16 @@
+# Automatic Item Selling
+## Description
+This is a simple PaperMC plugin that automatically sells specified Items and gives the Player the money via Vault
+
+## Config
+```yaml
+# %item-count% -> the number of items being sold (accumulates as long as the actionbar message is up)
+# %item% -> the name of the item as specified in `display`
+# %payout% -> the accumulated price for the items (i.e. %item-count% * price)
+sold-message: "<gold>Sold %item-count% %item% for %payout%"
+
+items:
+  bamboo: # the name of the material of the item as specified in https://jd.papermc.io/paper/1.19/org/bukkit/Material.html
+    price: 1.0 # the price the item is sold for
+    display: "" # empty for default, which would be equivalent to "<white>[Bamboo]"
+```
