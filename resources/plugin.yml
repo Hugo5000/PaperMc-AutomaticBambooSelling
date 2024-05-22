@@ -1,0 +1,11 @@
+name: ${name}
+version: ${version}
+description: ${description}
+load: POSTWORLD
+api-version: ${api}
+author: Hugo B.
+
+softdepend:
+  - Vault
+
+main: ${group}.${artifact}.plugin.${main}
